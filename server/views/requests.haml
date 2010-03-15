@@ -1,0 +1,11 @@
+%h1==Requests for #{@kill_bit.name}
+%table
+  %thead
+    %tr
+      %th IP Address
+      %th Created At
+  %tbody
+    -@requests.each do |request|
+      %tr
+        %td=request.ip
+        %td=request.created_at

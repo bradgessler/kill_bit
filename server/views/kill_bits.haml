@@ -1,0 +1,6 @@
+%h1 Kill Bits
+%ul
+  -@kill_bits.each do |kill_bit|
+    %li
+      %a(href="/#{kill_bit.id}")=kill_bit.name
+%a(href="/new") Create a new Kill Bit

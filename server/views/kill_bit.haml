@@ -1,0 +1,10 @@
+%h1=@kill_bit.name
+%dl
+  %dt Killed?
+  %dd=@kill_bit.killed
+%dl
+  %dt Killed At
+  %dd=@kill_bit.killed_at
+
+%a(href="/#{@kill_bit.id}/edit") Edit
+%a(href="/#{@kill_bit.id}/requests") Request History
